@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Creator</title>
+  <link rel="stylesheet" href="personal.css">
+</head>
+<body id="mainBody" class="vertical">
+  <div class="menu-container">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="personal.html">Personal Info</a>
+      <a href="burger-website.html">Burger Bliss</a>
+    </nav>
+    <button id="toggleBtn" onclick="toggleLayout()">Horizontal</button>
+  </div>
+
+  <header>
+    <div class="header-text">
+      <h1>About the Creator</h1>
+      <p>Get to know the person behind Burger Bliss</p>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="info-section">
+      <h2>Personal Information</h2>
+      <div class="info-card">
+        <img src="images/my_picture_of_self.jpg" alt="Profile Picture">
+        <div class="details">
+          <p><span>Name:</span> Rg Gabriel G. Manuel</p>
+          <p><span>Age:</span> 21 years old</p>
+          <p><span>Course:</span> BS Information Technology</p>
+          <p><span>School:</span> Panpacific University</p>
+          <p><span>Hobbies:</span> Coding, Drawing, Playing Games</p>
+          <p><span>Goal:</span> To become a skilled web developer and create cool websites.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">Python</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Personal Page | Created by Rg Gabriel Manuel</p>
+  </footer>
+
+  <script>
+    function toggleLayout() {
+      const body = document.getElementById("mainBody");
+      const btn = document.getElementById("toggleBtn");
+
+      if (body.classList.contains("vertical")) {
+        body.classList.remove("vertical");
+        body.classList.add("horizontal");
+        btn.textContent = "Vertical";
+      } else {
+        body.classList.remove("horizontal");
+        body.classList.add("vertical");
+        btn.textContent = "Horizontal";
+      }
+    }
+  </script>
+</body>
+</html>
